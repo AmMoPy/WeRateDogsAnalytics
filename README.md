@@ -15,7 +15,7 @@ The dataset featured is the tweet archive of Twitter user [@dog_rates](https://t
 
 ### Code
 
-Python 3 with Pandas, Numpy and matplotlib being main libraries
+Python 3 with Pandas, Numpy being main libraries
 
 ### Data source
 
