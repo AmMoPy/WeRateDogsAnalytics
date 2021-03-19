@@ -19,8 +19,6 @@ Python 3 with Pandas, Numpy being main libraries
 
 ### Data source
 
-Data were gathered from the following sources:
-
 - Twitter archive for the period mentioned earlier.
 - Image prediction results, these predictions are outputs of a neural network that can classify breeds of dogs based on their images. Results are based on three tests for each picture along with their relative confidence level of the true dog's breed.
 - Twitter API, to query any missing data from the archive.
