@@ -8,7 +8,7 @@ For more on dog breeds, please check [DogTime](https://dogtime.com/). Also, all 
 
 ### Scope
 
-The dataset featured is the tweet archive of Twitter user [@dog_rates](https://twitter.com/dog_rates), scope of this analysis covers the period starting Nov'15 till July'17 with a total of 1467 tweets. Only original ratings were considered (no replies or retweets) with the aim of concluding on two main things:
+The dataset featured is the tweet archive of Twitter user [@dog_rates](https://twitter.com/dog_rates), scope of this analysis covers the period starting Nov'15 till July'17 with a total of 1467 tweets. Only tweets with dog images and original ratings were considered (no replies or retweets) with the aim of concluding on two main things:
 
 - Why is this account successful.
 - Key drivers of higher follower engagement. 
