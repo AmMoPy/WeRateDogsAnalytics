@@ -28,45 +28,43 @@ Python 3 with Pandas, Numpy being main libraries
 
 Biggest challenge was cleaning image predictions results for the following reasons:
   - Some results were so confusing. Several false predictions, which means that images are not for an actual dogs, were in fact for an actual dogs!. [Lusy Imbergerova & Deril](https://www.youtube.com/watch?v=GL3DXJE9UJk) were referenced as 'Home Theater' in image prediction results :(
-  - Very close confidence levels for true prediction results, while highest prediction not always correct. Example: one image had first prediction result of a Lakeland terrier at 19% confidence and second prediction result of a Labrador retriever at 16% confidence, the actual image was for a Labrador retriever.
+  - Very close confidence levels for true prediction results, while highest prediction not always correct. Example: one image had first breed prediction result being a Lakeland terrier at 19% confidence and second prediction result being a Labrador retriever at 16% confidence, the actual image was for a Labrador retriever!
   - I have very limited knowledge of dog breeds, so to decide on what picture is for which breed was like 'IS THIS FOR REAL??'
 
 To overcome these challenges I designed a systematic process as follows:
   - Built a dataset of all breed info scraped from [DogTime](https://dogtime.com/) in order to make an informed decision cleaning these pictures and producing and accurate analysis
-  - Incorporated engagement metrics to filter prediction results for false predictions that are for actual dogs. Most likely, higher engagement signals that this tweet is for an actual dog.
-  - Assessed accuracy of true prediction by identifying which test results groups (1st/2nd/3rd) had most correct predictions, discarded groups with lowest correct counts and manually verified the results of tweets with high engagement metrics based on visual inspection of the image.
+  - Incorporated engagement metrics to filter prediction results of false predictions that are for actual dogs. Most likely, higher engagement signals that this tweet is for an actual dog.
+  - Assessed accuracy of true prediction by identifying which test result groups (1st/2nd/3rd) had most correct predictions, discarded groups with lowest correct counts and manually verified the results of tweets with high engagement metrics based on visual inspection of the image.
 
 ### Approach
 
-Logical steps in assessing and cleaning data were taken. First step was to spot all issues that I could possible identify in the context of clean and tidy data both visually and programmatically. Next step was the actual cleaning of these issues in a logical order to save time.
+systematic steps in assessing and cleaning data were taken. First thing was to spot all issues that I could possible identify in the context of clean and tidy data both visually and programmatically. Then came the actual cleaning of these issues in a logical order to save time.
 
 ### Assessment outcome
 
 - A-Quality Issues
   - A.1-Twitter Archive Dataframe:
-    - A.1.1-Variables does not conform to our defined schemas
+    - A.1.1-Variables does not conform to our defined schema
     - A.1.2-Time stamp dtype not properly identified
     - A.1.3-Some tweets have misleading rating
     - A.1.4-Dog name column has several wrong input ('a','the','this','an'), missing names are misrepresented and sometimes not properly extracted from tweet text
     - A.1.5-Multiple dog stage occurrences for a single tweet
     - A.1.6-Dog stage not properly extracted and missing values are misrepresented
   - A.2-Image predictions Dataframe:
-    - A.2.1-Duplicated records noted, mainly related to retweets and replies
-    - A.2.2-Image prediction results are not accurate. Some 'false' predictions are actually dogs!
-    - A.2.3-Some breed names are incorrect and sometimes misleading 'Pembroke' vs 'Pembroke Welsh Corgi'
+    - A.2.1-Duplicated records, mainly related to retweets and replies
+    - A.2.2-Image prediction results are somewhat misleading
+    - A.2.3-Some breed names are incorrect and sometimes misleading
   - A.3-Breed Dataframe:
-    - A.3.1-Breed column's naming convention is not unified, breed column is capitalized and separated by whitespace instead of (_)
+    - A.3.1-Breed column's naming convention is not unified
   - A.4-Breed Info Dataframe:
-    - A.4.1-Breed column's naming convention is not unified, breed column is separated by (-) instead of (_)
+    - A.4.1-Breed column's naming convention is not unified
 - B-Tidiness Issues
   - B.1-Twitter Archive Dataframe:
     - B.1.1-Tweet text column include both tweet text and links
     - B.1.2-One variable in four columns. I.e: 'doggo', 'floofer' are different representations of a single variable 'Dog Stage'
     - B.1.3-Total entries does not match that in Image predictions Dataframe
-    - B.1.4-Engagement metrics should be included in the Dataframe
   - B.2-Image predictions Dataframe:
-    - B.2.1-Prediction need to be narrowed to the highest % of tweets having dog images
-    - B.2.3-All breed information should be included in the Dataframe
+    - B.2.1-All breed information should be included in the Dataframe
 
 ### Conclusion
 
