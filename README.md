@@ -4,7 +4,7 @@
 
 Please check [Dogs Are Doggos: An Internet Language Built Around Love For The Puppers](https://www.npr.org/sections/alltechconsidered/2017/04/23/524514526/dogs-are-doggos-an-internet-language-built-around-love-for-the-puppers) to familiarize yourself with formal Doggolingo as you will see much use of it in this analysis
 
-For more on dog breeds, please check [DogTime](https://dogtime.com/). Also, all breed info were collected and stored in a separate CSV file for you convenience.
+For more on dog breeds, please check [DogTime](https://dogtime.com/). Also, all breed info were collected and stored in a separate CSV file for your convenience.
 
 ### Scope
 
@@ -26,7 +26,7 @@ Python 3 with Pandas, Numpy being main libraries
 
 ### Challenges
 
-Biggest challenge was cleaning image predictions results for the following reasons:
+Biggest challenge was cleaning image prediction results for the following reasons:
   - Some results were so confusing. Several false predictions, which means that images are not for an actual dogs, were in fact for an actual dogs!. [Lusy Imbergerova & Deril](https://www.youtube.com/watch?v=GL3DXJE9UJk) were referenced as 'Home Theater' in image prediction results :(
   - Very close confidence levels for true prediction results, while highest prediction not always correct. Example: one image had first breed prediction result being a Lakeland terrier at 19% confidence and second prediction result being a Labrador retriever at 16% confidence, the actual image was for a Labrador retriever!
   - I have very limited knowledge of dog breeds, so to decide on what picture is for which breed was like 'IS THIS FOR REAL??'
