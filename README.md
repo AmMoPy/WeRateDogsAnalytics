@@ -1,6 +1,6 @@
 ### Background
 
-[WeRateDogs](https://en.wikipedia.org/wiki/WeRateDogs) is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because ["they're good dogs Brent."](https://www.vox.com/2018/7/23/17603566/dog-rates-good-dogs-brent-brant-got-a-puppy-meme) WeRateDogs has over 4 million followers and has received international media coverage.
+[WeRateDogs](https://en.wikipedia.org/wiki/WeRateDogs) is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because ["they're good dogs Brent."](https://www.vox.com/2018/7/23/17603566/dog-rates-good-dogs-brent-brant-got-a-puppy-meme) WeRateDogs has over 8 million followers and has received international media coverage.
 
 Please check [Dogs Are Doggos: An Internet Language Built Around Love For The Puppers](https://www.npr.org/sections/alltechconsidered/2017/04/23/524514526/dogs-are-doggos-an-internet-language-built-around-love-for-the-puppers) to familiarize yourself with formal Doggolingo as you will see much use of it in this analysis
 
