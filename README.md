@@ -31,14 +31,14 @@ Biggest challenge was cleaning image predictions results for the following reaso
   - Very close confidence levels for true prediction results, while highest prediction not always correct. Example: one image had first breed prediction result being a Lakeland terrier at 19% confidence and second prediction result being a Labrador retriever at 16% confidence, the actual image was for a Labrador retriever!
   - I have very limited knowledge of dog breeds, so to decide on what picture is for which breed was like 'IS THIS FOR REAL??'
 
-To overcome these challenges I designed a systematic process as follows:
-  - Built a dataset of all breed info scraped from [DogTime](https://dogtime.com/) in order to make an informed decision cleaning these pictures and producing and accurate analysis
+To overcome these challenges I designed a systematic cleaning process as follows:
+  - Built a dataset of all breed info scraped from [DogTime](https://dogtime.com/) in order to make an informed decision cleaning these pictures and producing accurate analysis
   - Incorporated engagement metrics to filter prediction results of false predictions that are for actual dogs. Most likely, higher engagement signals that this tweet is for an actual dog.
   - Assessed accuracy of true prediction by identifying which test result groups (1st/2nd/3rd) had most correct predictions, discarded groups with lowest correct counts and manually verified the results of tweets with high engagement metrics based on visual inspection of the image.
 
 ### Approach
 
-systematic steps in assessing and cleaning data were taken. First thing was to spot all issues that I could possible identify in the context of clean and tidy data both visually and programmatically. Then came the actual cleaning of these issues in a logical order to save time.
+Systematic steps in assessing and cleaning data were taken. First thing was to spot all issues that I could possible identify in the context of clean and tidy data both visually and programmatically. Then came the actual cleaning of these issues in a logical order to save time.
 
 ### Assessment outcome
 
