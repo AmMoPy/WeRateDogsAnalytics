@@ -72,7 +72,7 @@ Systematic steps in assessing and cleaning data were taken. First thing was to s
 
 - Both content and context influence user engagement. Tweets composed of a good mixture of both are most likely to receive higher user engagement. If you are a dog owner seeking to celebritize your doggo then take this into consideration in your next photo session.
 
-__*I really enjoyed this project from start to end, it was challenging but was very rewarding. I aim that readers of this analysis with limited knowledge of dog breeds become more enlightened after going through it and that breed CSV proves useful to someone analyzing breeds for some reason.*__
+__*I really enjoyed this project from start to end, it was challenging but was very rewarding. I aim that readers of this analysis with limited knowledge of dog breeds become more enlightened after going through it and that breed CSVs proves useful to someone analyzing breeds for some reason.*__
 
 __*Hopefully you will enjoy reading through it.*__
 
